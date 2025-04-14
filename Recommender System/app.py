@@ -14,7 +14,7 @@ rules = load_rules()
 all_products = sorted(set().union(*rules["antecedents"]))
 
 # Title and instructions
-st.title("🛍️ Nilons Product Recommender")
+st.title("🛍️ Nilons Product Co-Purchase Indicator")
 st.markdown("Select a product to see what items are commonly bought with it.")
 
 # Dropdown to select product
