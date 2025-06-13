@@ -5,7 +5,7 @@ from mlxtend.frequent_patterns import association_rules
 # Load the saved basket and compute frequent items + rules
 @st.cache_data
 def load_rules():
-    return pd.read_pickle("Recommender System/rules.pkl")
+    return pd.read_pickle("recommender-system-1\\rules.pkl")
 
 # Load rules
 rules = load_rules()
