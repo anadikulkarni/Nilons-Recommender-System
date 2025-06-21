@@ -285,12 +285,6 @@ def main():
                     col1, col2, col3, col4 = st.columns(4)
                     with col1:
                         st.metric("Performance Category", perf['Performance_Category'])
-                    with col2:
-                        st.metric("Quantity Growth", f"{perf['Qty_Growth_Rate']:.1f}%", 
-                                    delta=f"{perf['Qty_Growth_Rate']:.1f}%")
-                    with col3:
-                        st.metric("Amount Growth", f"{perf['Amount_Growth_Rate']:.1f}%",
-                                    delta=f"{perf['Amount_Growth_Rate']:.1f}%")
                     with col4:
                         st.metric("Products Handled", f"{int(perf['Prev_Unique_Products'])}")
                 
